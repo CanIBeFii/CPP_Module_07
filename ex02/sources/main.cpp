@@ -19,7 +19,7 @@ int main( void ) {
 		std::cout << " and on testInt2: " << testInt2[i] << std::endl;
 	}
 
-		Array<int>	lastTest( testInt2 );
+	Array<int>	lastTest( testInt2 );
 
 	try {
 		std::cout << "Accessing a valid index: " << lastTest[3] << std::endl;
