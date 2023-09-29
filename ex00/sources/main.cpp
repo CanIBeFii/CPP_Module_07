@@ -10,7 +10,7 @@ int	main( void ) {
 		
 		swap<char>( a, b );
 
-		std::cout << "a: " << a << " b: " << b << std::endl;
+		std::cout << "a: " << a << "  b: " << b << std::endl << std::endl;
 	}
 	{
 		int	num1 = 24;
@@ -21,6 +21,6 @@ int	main( void ) {
 		
 		swap<int>( num1, num2 );
 
-		std::cout << "num1: " << num1 << " num2: " << num2 << std::endl;
+		std::cout << "num1: " << num1 << "  num2: " << num2 << std::endl;
 	}
 }
