@@ -18,13 +18,13 @@ class Array {
 			std::cout << "called" << std::endl;
 		}
 
-		Array( unsigned int n ) : _array( new T[n] ), _size( n ) {
+		Array( unsigned int n ) : _array( new T[n]() ), _size( n ) {
 			std::cout << BOLDCYAN << "ScalarConverter: " << RESET;
 			std::cout << BOLDYELLOW << "Type " << BOLDGREEN << "Constructor " << RESET;
 			std::cout << "called" << std::endl;
 		}
 
-		Array( const Array& copy ) : _array( new T[ copy.size() ] ), _size( copy.size() ) {
+		Array( const Array& copy ) : _array( new T[ copy.size() ]() ), _size( copy.size() ) {
 			std::cout << BOLDCYAN << "ScalarConverter: " << RESET;
 			std::cout << BOLDYELLOW << "Copy " << BOLDGREEN << "Constructor " << RESET;
 			std::cout << "called" << std::endl;
