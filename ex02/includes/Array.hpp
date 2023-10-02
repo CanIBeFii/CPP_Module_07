@@ -68,7 +68,7 @@ class Array {
 		}
 
 		T&				operator[]( unsigned int index ) const {
-			if ( _size < index ) {
+			if ( _size < index + 1 ) {
 				throw OutOfBoundsException();
 			}
 			return ( _array[index] );
