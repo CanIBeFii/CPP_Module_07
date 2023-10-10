@@ -8,6 +8,8 @@
 #define BOLDYELLOW  "\033[1m\033[33m"      /* Bold Yellow */
 #define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
 
+#include <iostream>
+
 template <typename T>
 class Array {
 	public:

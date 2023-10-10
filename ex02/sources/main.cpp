@@ -1,5 +1,4 @@
-#include <iostream>
-#include "Array.hpp"
+#include "../includes/Array.hpp"
 
 int main( void ) {
 	Array<double>	testDouble;
