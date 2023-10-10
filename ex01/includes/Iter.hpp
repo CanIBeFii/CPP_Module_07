@@ -4,7 +4,7 @@
 #include <iostream>
 
 template <typename T>
-	void	iter( T* array, size_t size, void (*f)( T& ) ) {
+	void	iter( T* array, size_t size, void (*f)( const T& ) ) {
 		if ( !array ) {
 			return ;
 		}
