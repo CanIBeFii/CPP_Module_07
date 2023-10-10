@@ -1,4 +1,4 @@
-#include "whatever.hpp"
+#include "../includes/whatever.hpp"
 
 int	main( void ) {
 	{
@@ -22,5 +22,16 @@ int	main( void ) {
 		swap<int>( num1, num2 );
 
 		std::cout << "num1: " << num1 << "  num2: " << num2 << std::endl;
+	}
+	{
+		float	f1 = 42.0f;
+		float	f2 = 42.42f;
+
+		std::cout << max<float>( f1, f2 ) << std::endl;
+		std::cout << min<float>( f1, f2 ) << std::endl;
+
+		swap<float>( f1, f2 );
+
+		std::cout << "f1: " << f1 << " f2: " << f2 << std::endl;
 	}
 }
