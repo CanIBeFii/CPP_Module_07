@@ -69,7 +69,7 @@ class Array {
 			return ( *this );
 		}
 
-		T&				operator[]( unsigned int index ) const {
+		T&				operator[]( unsigned int index ) {
 			if ( _size < index + 1 ) {
 				throw OutOfBoundsException();
 			}
@@ -79,6 +79,13 @@ class Array {
 		// Methods
 		unsigned int	size( void ) const {
 			return ( _size );
+		}
+
+		const T&		operator[]( unsigned int index ) const {
+			if ( _size < index + 1 ) {
+				throw OutOfBoundsException();
+			}
+			return ( _array[index] );
 		}
 
 		class OutOfBoundsException : public std::exception {
